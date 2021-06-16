@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title> J. Rinaldi | Web Developer</title>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav_logo"><i class='bx bxs-meteor'></i> Jared Rinaldi</a>
+                </div>
+    
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                        <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class='bx bxs-meteor'></i>
+                </div>
+            </nav>
+        </header>
+    
+        <main class="l-main">
+            <!-- HOME -->
+            <section class="home bd-grid" id="home">
+                <video autoplay muted loop id="backgroundVideo" >
+                    <source src="images/Cave - 45340.mp4" type="video/mp4">
+                </video>
+                <div class="home_data">
+                    <h1 class="home_title">Hello. <br>My name is <span class="home_title-color">Jared Rinaldi. </span><br>I'm a software developer.</h1>
+                    <a href="#projects" class="button">Check out my latest projects <i class='bx bx-down-arrow-alt'></i></a>
+                </div>
+            </section>
+    
+            <!-- PROJECTS -->
+    
+            <section class="projects section" id="projects">
+                <h2 class="section-title">Projects</h2>
+    
+                <div class="projects_container bd-grid">
+                    <div class="project_img">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.barnabusapp.com">
+                            <img src="images/bartender.jpg" alt="Barnabus  - the bar-share app" onmouseover="changeTextBarnabus()" onmouseout="defaultText()">
+                                <h2 class="barnabus-text"> Barnabus </h2>
+                        </a>
+                    </div>
+                    <div class="project_img" id="kitari-img">
+                        <a target="_blank" rel="noopener noreferrer" href="http://www.drinkwatersounds.com">
+                            <img src="images/jump_kitari.jpeg" class="kitari_jump_pic" alt="Drinkwater Sounds" onmouseover="changeTextDrinkwater()" onmouseout="defaultText()">
+                            <h2 class="drinkwater-text"> Drinkwater Sounds </h2>    
+                        </a>
+                    </div>
+                    <div class="project_img" id="crypto-img">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.cryptocubez.com">
+                            <img src="images/bitcoin-2007769_1280.jpg" alt="Crypto Cubez - a cryptocurrency data tracker" onmouseover="changeTextCrypto()" onmouseout="defaultText()">
+                            <h2 class="crypto-text"> Crypto Cubez</h2>
+                        </a>
+                    </div>
+                    <h1 class="project_img project_text_card">Hover over the images to discover more about each project.</h1>
+                </div>
+                <a href="#about" class="button">My background as a developer <i class='bx bx-down-arrow-alt'></i></a>
+            </section>
+    
+            <!-- ABOUT -->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+    
+                <div class="about_container bd-grid">
+                    <div class="about_img">
+                        <img src="images/GuitarPic.jpeg" alt="guitar pic">
+                    </div>
+    
+                    <div class="about_text">
+                        <h2 class="about_subtitle">Greetings. I'm Jared. </h2>
+                        <p><b>I'm a full-stack web developer</b> obsessed with creative problem-solving and building efficient systems. <br><br> Languages I commonly use
+                            include Javascript, Swift, Python, HTML/CSS, SQL and React as a framework. Additional areas of knowledge include
+                             algorithms and databases, computer networking, shell scripting, containerization (Docker, Kubernetes etc.), Git
+                             and cloud computing. Recent certifications include the CompTIA Network+, the AWS
+                             Certified Cloud Practitioner and the Google Cloud Platform: Core Infrastructure.</p><br>
+    
+                        <p>I'm a quick learner with various technologies, a great team player and committed to delivering excellence 
+                             in all endeavors. As someone who has worked in many different fields before coming
+                            to tech, ranging from film production to hospitality, I have a deep well of domain expertise
+                            to compliment my programming skills. If you'd like to hear more about the projects I'm developing or to discuss 
+                            collaboration/employment, use the contact form below and I'll be in touch.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="button contact-redirect">Contact me! <i class='bx bx-down-arrow-alt'></i></a>
+            </section>
+    
+        <!-- CONTACT -->
+    
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact_container bd-grid">
+                    <form method="post" action="/contact-form-process.php">
+                        <label for="fname">Name:</label><br>
+                        <input type="text" placeholder="Name" class="contact_input" required>
+                        <label for="fname">E-mail:</label><br>
+                        <input type="mail" placeholder="Email" class="contact_input" required>
+                        <label for="fname">Message:</label><br>
+                        <textarea name="" id="" placeholder="What can I help you with?" cols="0" rows="10" class="contact_input" required></textarea>
+    
+                        <input type="submit" value="Submit" class="contact_button button">
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+    
+        <!-- FOOTER -->
+    
+        <section class="footer" id="footer">
+        <div class="footer-box">
+            <p class="footer_title">Jared Rinaldi | Web Developer | © 2021 | All Rights Reserved  <br>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jared-rinaldi/" class="home_social-icon"><i class='bx bxl-linkedin' ></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/PyronicGreen" class="home_social-icon"><i class='bx bxl-github' ></i></a></p>
+        </div>
+        </section>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
